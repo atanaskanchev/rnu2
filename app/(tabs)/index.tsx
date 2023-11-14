@@ -18,11 +18,12 @@ export default function TabOneScreen() {
   );
 }
 
-const stylesheet = createStyleSheet(() => ({
+const stylesheet = createStyleSheet((theme) => ({
   container: {
     flex: 1,
     alignItems: "center",
     justifyContent: "center",
+    backgroundColor: theme.colors.backgroundColor,
   },
   title: {
     fontSize: 20,
